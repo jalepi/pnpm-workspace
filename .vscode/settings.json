@@ -1,0 +1,10 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "git.autofetch": true,
+  "git.autofetchPeriod": 15000,
+  "vitest.maximumConfigs": 100,
+  "vitest.vitestPackagePath": "node_modules/vitest/package.json"
+}

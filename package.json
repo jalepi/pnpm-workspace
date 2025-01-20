@@ -1,0 +1,32 @@
+{
+  "packageManager": "pnpm@10.0.0",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "build:ci": "pnpm run format && pnpm run lint && pnpm run build",
+    "test": "pnpx vitest",
+    "test:ci": "pnpx vitest run --mode=ci",
+    "lint": "eslint . --cache --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --check --cache '**/*.{cjs,mjs,js,jsx,cts,mts,ts,tsx,json}'",
+    "format:fix": "prettier --write '**/*.{cjs,mjs,js,jsx,cts,mts,ts,tsx,json}'",
+    "catalog": "pnpx codemod pnpm/catalog"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "catalog:dev",
+    "@vitest/coverage-v8": "catalog:dev",
+    "eslint": "catalog:dev",
+    "eslint-config-prettier": "catalog:dev",
+    "eslint-plugin-prettier": "catalog:dev",
+    "eslint-plugin-react-hooks": "catalog:dev",
+    "eslint-plugin-react-refresh": "catalog:dev",
+    "glob": "catalog:dev",
+    "globals": "catalog:dev",
+    "happy-dom": "catalog:dev",
+    "prettier": "catalog:dev",
+    "typescript-eslint": "catalog:dev",
+    "vitest": "catalog:dev"
+  }
+}
