@@ -1,7 +1,6 @@
 import js from "@eslint/js";
 import globals from "globals";
 import ts from "typescript-eslint";
-import tsParser from "@typescript-eslint/parser";
 import prettierPlugin from "eslint-plugin-prettier";
 import prettierConfig from "eslint-config-prettier";
 import reactHooks from "eslint-plugin-react-hooks";
@@ -24,7 +23,7 @@ export default ts.config(
     languageOptions: {
       ecmaVersion: 2022,
       globals: globals.browser,
-      parser: tsParser,
+      parser: ts.parser,
       parserOptions: { projectService: true },
     },
     plugins: {
