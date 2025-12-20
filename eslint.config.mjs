@@ -1,3 +1,4 @@
+import { defineConfig } from "eslint/config";
 import js from "@eslint/js";
 import globals from "globals";
 import ts from "typescript-eslint";
@@ -9,7 +10,7 @@ import reactRefresh from "eslint-plugin-react-refresh";
 const code = "{packages,tests}";
 const ignore = "{dist,node_modules,test-results}";
 
-export default ts.config(
+export default defineConfig(
   prettierConfig,
   { ignores: [`${ignore}/**`, `${code}/*/${ignore}/**`] },
   {
