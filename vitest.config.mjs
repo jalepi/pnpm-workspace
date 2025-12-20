@@ -3,7 +3,6 @@ import workspace from "./vitest.workspace.mjs";
 
 export default defineConfig(({ mode }) => ({
   test: {
-    include: ["packages/*/src/**/*.{test,spec}?.(c|m)[jt]s?(x)"],
     workspace,
     environment: "happy-dom",
     reporters: mode === "ci" ? ["default", "junit"] : ["default"],
@@ -12,11 +11,11 @@ export default defineConfig(({ mode }) => ({
     },
     coverage: {
       enabled: mode === "ci",
-      include: ["**/packages/**/src/**"],
+      include: ["**/src/**"],
       provider: "v8",
       reporter: [
         ["cobertura", { file: "cobertura.xml" }],
-        ["html-spa", { subdir: "html" }],
+        ["html", { subdir: "html" }],
       ],
       reportsDirectory: "./test-results/coverage",
     },
