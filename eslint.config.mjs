@@ -7,7 +7,7 @@ import prettierConfig from "eslint-config-prettier";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
 
-const code = "{packages,tests}";
+const code = "{apps,packages,tests}";
 const ignore = "{dist,node_modules,test-results}";
 
 export default defineConfig(
