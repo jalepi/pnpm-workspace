@@ -22,7 +22,7 @@
     "typescript": "catalog:dev"
   },
   "type": "module",
-  "main": "dist/cjs/index.cjs",
+  "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
   "exports": {
@@ -33,7 +33,7 @@
       },
       "require": {
         "types": "./dist/cjs/index.d.ts",
-        "default": "./dist/cjs/index.cjs"
+        "default": "./dist/cjs/index.js"
       }
     }
   },
