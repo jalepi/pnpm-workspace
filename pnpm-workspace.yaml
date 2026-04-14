@@ -2,6 +2,8 @@ packages:
   - apps/*
   - packages/*
   - tests/*
+allowBuilds:
+  esbuild: true
 
 catalogs:
   dev:
@@ -17,6 +19,6 @@ catalogs:
     happy-dom: ^20.9.0
     prettier: ^3.8.2
     tslib: ^2.8.1
-    typescript: ^5.9.3
+    typescript: ^6.0.2
     typescript-eslint: ^8.58.2
     vitest: ^4.1.4
